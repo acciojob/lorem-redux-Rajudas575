@@ -1,10 +1,14 @@
-import { createAsyncThunk } from '@reduxjs/toolkit';
+import React from 'react';
+import { Provider } from 'react-redux';
+import store from './redux/store';
+import LoremFetcher from './components/LoremFetcher';
 
-export const fetchLorem = createAsyncThunk('lorem/fetchLorem', async () => {
-  const response = await fetch('https://api.lorem.com/ipsum');
-  if (!response.ok) {
-    throw new Error('Failed to fetch data');
-  }
-  const data = await response.json();
-  return data;
-});
+const App = () => {
+  return (
+    <Provider store={store}>
+      <LoremFetcher />
+    </Provider>
+  );
+};
+
+export default App;
