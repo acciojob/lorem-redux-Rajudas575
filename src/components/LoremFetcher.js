@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchLorem } from '../redux/actions';
+import { fetchLorem } from './actions';
 
 const LoremFetcher = () => {
   const dispatch = useDispatch();
