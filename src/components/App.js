@@ -1,7 +1,7 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import store from './redux/store';
-import LoremFetcher from './components/LoremFetcher';
+import store from './store';
+import LoremFetcher from './LoremFetcher';
 
 const App = () => {
   return (
