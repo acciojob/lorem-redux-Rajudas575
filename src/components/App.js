@@ -1,5 +1,7 @@
 import React from "react";
 import './../styles/App.css';
+// import Menu from "./menu.js";
+// import SmallBox from "./innerDisplay.js";
 
 class APP extends React.Component {
   componentWillUpdate() {
